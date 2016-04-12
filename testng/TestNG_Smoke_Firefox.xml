@@ -14,7 +14,7 @@
 		<parameter name="browser" value="firefox" />
 		<parameter name="browser_version" value="45.0.2" />
 		
-		<parameter name="expected_text" value="Hello There!"/>
+		<parameter name="expected_text" value="Hello there"/>
 		
 		<groups>
 			<run>

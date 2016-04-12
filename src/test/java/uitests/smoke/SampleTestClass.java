@@ -1,6 +1,7 @@
 package uitests.smoke;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -19,12 +20,24 @@ public class SampleTestClass extends BaseTest
     public void testMethod(String expected_text)
     {
         element = new WebDriverWait(driver, 25).until(ExpectedConditions.visibilityOfElementLocated(By.name("q")));
-
-        element.sendKeys("Hello There!");
-
-        element = driver.findElement(By.name("btnK"));
+        try {
+            Thread.sleep(5000);
+        } catch(InterruptedException ex) {
+            Thread.currentThread().interrupt();
+        }
+        element.sendKeys("Hello There!" + Keys.RETURN);
+        try {
+            Thread.sleep(5000);
+        } catch(InterruptedException ex) {
+            Thread.currentThread().interrupt();
+        }
+        /*element = driver.findElement(By.name("btnK"));
         element.click();
-
+        try {
+            Thread.sleep(5000);
+        } catch(InterruptedException ex) {
+            Thread.currentThread().interrupt();
+        }*/
         Assert.assertTrue(driver.getPageSource().contains(expected_text), "Expected text not found on page!");
     }
 }

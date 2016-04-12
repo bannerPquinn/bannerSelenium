@@ -5,7 +5,7 @@
   <parameter name="os_version" value="8"/>
   <parameter name="browser" value="firefox"/>
   <parameter name="browser_version" value="45.0.2"/>
-  <parameter name="expected_text" value="Hello There!"/>
+  <parameter name="expected_text" value="Press Enter to search."/>
   <listeners>
     <listener class-name="samplereporter.HTMLReporter"/>
     <listener class-name="utils.BaseTest"/>
@@ -15,7 +15,6 @@
     <parameter name="os_version" value="8"/>
     <parameter name="browser" value="firefox"/>
     <parameter name="browser_version" value="45.0.2"/>
-    <parameter name="expected_text" value="Hello There!"/>
     <groups>
       <run>
         <include name="Smoke"/>
@@ -27,7 +26,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testMethod" invocation-numbers="0"/>
+          <include name="testMethod"/>
         </methods>
       </class> <!-- uitests.smoke.SampleTestClass -->
     </classes>

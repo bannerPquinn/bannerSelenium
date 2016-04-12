@@ -5,7 +5,7 @@
       <![CDATA[[Console Log] Screenshot saved in uitests.smoke.SampleTestClass_screenshot.png]]>
     </line>
   </reporter-output>
-  <suite name="Smoke Test Suite" duration-ms="7321" started-at="2016-04-12T16:23:55Z" finished-at="2016-04-12T16:24:03Z">
+  <suite name="Smoke Test Suite" duration-ms="5388" started-at="2016-04-12T16:49:01Z" finished-at="2016-04-12T16:49:06Z">
     <groups>
       <group name="Smoke">
         <method signature="SampleTestClass.testMethod(java.lang.String)[pri:0, instance:[SampleTestClass passed=0 failed=0 skipped=0]]" name="testMethod" class="uitests.smoke.SampleTestClass"/>
@@ -14,9 +14,9 @@
         <method signature="SampleTestClass.testMethod(java.lang.String)[pri:0, instance:[SampleTestClass passed=0 failed=0 skipped=0]]" name="testMethod" class="uitests.smoke.SampleTestClass"/>
       </group> <!-- SampleModule -->
     </groups>
-    <test name="Sample Test Class Windows 8 Firefox 45.0.2" duration-ms="7321" started-at="2016-04-12T16:23:55Z" finished-at="2016-04-12T16:24:03Z">
+    <test name="Sample Test Class Windows 8 Firefox 45.0.2" duration-ms="5388" started-at="2016-04-12T16:49:01Z" finished-at="2016-04-12T16:49:06Z">
       <class name="uitests.smoke.SampleTestClass">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:[SampleTestClass passed=0 failed=0 skipped=0]]" name="setUp" is-config="true" duration-ms="6038" started-at="2016-04-12T12:23:55Z" finished-at="2016-04-12T12:24:01Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:[SampleTestClass passed=0 failed=0 skipped=0]]" name="setUp" is-config="true" duration-ms="4686" started-at="2016-04-12T12:49:01Z" finished-at="2016-04-12T12:49:06Z">
           <params>
             <param index="0">
               <value>
@@ -42,50 +42,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testMethod(java.lang.String)[pri:0, instance:[SampleTestClass passed=0 failed=0 skipped=0]]" name="testMethod" duration-ms="317" started-at="2016-04-12T12:24:01Z" finished-at="2016-04-12T12:24:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Hello There!]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.ElementNotVisibleException">
+        <test-method status="FAIL" signature="testMethod(java.lang.String)[pri:0, instance:[SampleTestClass passed=0 failed=0 skipped=0]]" name="testMethod" duration-ms="0" started-at="2016-04-12T12:49:06Z" finished-at="2016-04-12T12:49:06Z">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[Element is not currently visible and so may not be interacted with
-Command duration or timeout: 20 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'USD1400983', ip: '149.24.65.209', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 83e9b6dd-29df-40eb-8c49-5382991241ca]]>
+              <![CDATA[
+Parameter 'enter search' is required by @Test on method testMethod but has not been marked @Optional or defined
+in C:\Users\pquinn\git\bannerSelenium\testng\TestNG_Smoke_Firefox.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Command duration or timeout: 20 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'USD1400983', ip: '149.24.65.209', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 83e9b6dd-29df-40eb-8c49-5382991241ca
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at uitests.smoke.SampleTestClass.testMethod(SampleTestClass.java:26)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'enter search' is required by @Test on method testMethod but has not been marked @Optional or defined
+in C:\Users\pquinn\git\bannerSelenium\testng\TestNG_Smoke_Firefox.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:358)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:450)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
@@ -98,25 +71,13 @@ Session ID: 83e9b6dd-29df-40eb-8c49-5382991241ca
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'USD1400983', ip: '149.24.65.209', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_25'
-Driver info: driver.version: unknown
-	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/pquinn/AppData/Local/Temp/anonymous9024148600080054976webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
-	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/pquinn/AppData/Local/Temp/anonymous9024148600080054976webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/pquinn/AppData/Local/Temp/anonymous9024148600080054976webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/pquinn/AppData/Local/Temp/anonymous9024148600080054976webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/pquinn/AppData/Local/Temp/anonymous9024148600080054976webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
-            <line>
-              <![CDATA[[Console Log] Screenshot saved in uitests.smoke.SampleTestClass_screenshot.png]]>
-            </line>
           </reporter-output>
         </test-method> <!-- testMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:[SampleTestClass passed=0 failed=0 skipped=0]]" name="tearDown" is-config="true" duration-ms="688" started-at="2016-04-12T12:24:02Z" finished-at="2016-04-12T12:24:03Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:[SampleTestClass passed=0 failed=0 skipped=0]]" name="tearDown" is-config="true" duration-ms="585" started-at="2016-04-12T12:49:06Z" finished-at="2016-04-12T12:49:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
