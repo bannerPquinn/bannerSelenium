@@ -10,6 +10,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import utils.BaseTest;
+import utils.SqlHandler;
 
 public class SampleTestClass extends BaseTest
 {
@@ -19,6 +20,11 @@ public class SampleTestClass extends BaseTest
     @Test(groups = { "Smoke", "SampleModule" })
     public void testMethod(String expected_text)
     {
+    	
+    	
+    	SqlHandler.sqlTransform();
+		
+		
         element = new WebDriverWait(driver, 25).until(ExpectedConditions.visibilityOfElementLocated(By.name("q")));
         try {
             Thread.sleep(5000);
