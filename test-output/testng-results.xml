@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[[Console Log] Screenshot saved in uitests.smoke.SampleTestClass_screenshot.png]]>
-    </line>
   </reporter-output>
-  <suite name="Smoke Test Suite" duration-ms="5388" started-at="2016-04-12T16:49:01Z" finished-at="2016-04-12T16:49:06Z">
+  <suite name="Smoke Test Suite" duration-ms="18389" started-at="2016-04-14T20:28:29Z" finished-at="2016-04-14T20:28:47Z">
     <groups>
       <group name="Smoke">
         <method signature="SampleTestClass.testMethod(java.lang.String)[pri:0, instance:[SampleTestClass passed=0 failed=0 skipped=0]]" name="testMethod" class="uitests.smoke.SampleTestClass"/>
@@ -14,9 +11,9 @@
         <method signature="SampleTestClass.testMethod(java.lang.String)[pri:0, instance:[SampleTestClass passed=0 failed=0 skipped=0]]" name="testMethod" class="uitests.smoke.SampleTestClass"/>
       </group> <!-- SampleModule -->
     </groups>
-    <test name="Sample Test Class Windows 8 Firefox 45.0.2" duration-ms="5388" started-at="2016-04-12T16:49:01Z" finished-at="2016-04-12T16:49:06Z">
+    <test name="Sample Test Class Windows 8 Firefox 45.0.2" duration-ms="18389" started-at="2016-04-14T20:28:29Z" finished-at="2016-04-14T20:28:47Z">
       <class name="uitests.smoke.SampleTestClass">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:[SampleTestClass passed=0 failed=0 skipped=0]]" name="setUp" is-config="true" duration-ms="4686" started-at="2016-04-12T12:49:01Z" finished-at="2016-04-12T12:49:06Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:[SampleTestClass passed=0 failed=0 skipped=0]]" name="setUp" is-config="true" duration-ms="7217" started-at="2016-04-14T16:28:29Z" finished-at="2016-04-14T16:28:36Z">
           <params>
             <param index="0">
               <value>
@@ -42,42 +39,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testMethod(java.lang.String)[pri:0, instance:[SampleTestClass passed=0 failed=0 skipped=0]]" name="testMethod" duration-ms="0" started-at="2016-04-12T12:49:06Z" finished-at="2016-04-12T12:49:06Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'enter search' is required by @Test on method testMethod but has not been marked @Optional or defined
-in C:\Users\pquinn\git\bannerSelenium\testng\TestNG_Smoke_Firefox.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'enter search' is required by @Test on method testMethod but has not been marked @Optional or defined
-in C:\Users\pquinn\git\bannerSelenium\testng\TestNG_Smoke_Firefox.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:358)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:450)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:382)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="testMethod(java.lang.String)[pri:0, instance:[SampleTestClass passed=0 failed=0 skipped=0]]" name="testMethod" duration-ms="10490" started-at="2016-04-14T16:28:36Z" finished-at="2016-04-14T16:28:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hello there]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:[SampleTestClass passed=0 failed=0 skipped=0]]" name="tearDown" is-config="true" duration-ms="585" started-at="2016-04-12T12:49:06Z" finished-at="2016-04-12T12:49:06Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:[SampleTestClass passed=0 failed=0 skipped=0]]" name="tearDown" is-config="true" duration-ms="661" started-at="2016-04-14T16:28:47Z" finished-at="2016-04-14T16:28:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
