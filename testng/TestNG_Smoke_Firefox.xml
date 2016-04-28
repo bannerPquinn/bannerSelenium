@@ -2,9 +2,15 @@
 
 <suite name="Smoke Test Suite" verbose="1" parallel="tests" thread-count="4" configfailurepolicy="continue">
 
+	<!--
 	<listeners>
-		<listener class-name="samplereporter.HTMLReporter" />
-		<listener class-name="utils.BaseTest" />
+		<listener class-name="samplereporter.HTMLReporter" />	
+	</listeners> -->
+	
+	<listeners>      
+  		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="utils.BaseTest" />
 	</listeners>
 
 	<test name="Sample Test Class Windows 8 Firefox 45.0.2">
